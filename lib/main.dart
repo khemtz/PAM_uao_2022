@@ -13,16 +13,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+         primarySwatch: Colors.amber,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("esta es la AppBar"),
+          title: Text("esta es la Appbar en amarillo"),
         ),
-        body: Center(
-          child: Text("Aqui es el body"),
-        ),
+        body: Text("Aqui esta el texto del body"),
+
+
       ),
     );
   }
 }
+
