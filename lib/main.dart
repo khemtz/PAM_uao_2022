@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,10 +17,7 @@ class MyApp extends StatelessWidget {
          primarySwatch: Colors.amber,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("esta es la Appbar en amarillo"),
-        ),
-        body: Text("Aqui esta el texto del body"),
+        body: DescriptionPlace(),
 
 
       ),
