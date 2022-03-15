@@ -17,6 +17,9 @@ class MyApp extends StatelessWidget {
          primarySwatch: Colors.amber,
       ),
       home: Scaffold(
+          /*appBar: AppBar(
+            title: Text("Hola Mundo"),
+          ),*/
         body: DescriptionPlace(),
 
 

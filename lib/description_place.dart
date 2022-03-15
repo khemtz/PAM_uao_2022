@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 class DescriptionPlace extends StatelessWidget {
   @override
 
-  String descriptionDummy = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+  String descriptionPlace = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
 
   Widget build(BuildContext context) {
     // TODO: implement build
     final fullstar = Container (
       margin: EdgeInsets.only(
-        top: 323.0,
-        right: 3.0
+          top: 323.0,
+          right: 3.0
       ),
       child: Icon(
         Icons.star,
@@ -56,16 +56,39 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final title_stars = Row(
-        children: <Widget>[
-          namePlace,
-          estrellitas,
-        ],
-        );
+      children: <Widget>[
+        namePlace,
+        estrellitas,
+      ],
+    );
+
+    final description = Container(
+      margin: new EdgeInsets.only(
+          top: 20,
+          left: 20.0,
+          right: 20.0
+
+      ),
+      child: new Text(
+        descriptionPlace,
+        style: const TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.bold,
+            color: Color(0xFF56575a)
+        ),
+
+      ),
+    );
 
 
 
+    return Column(
+      children: [
+        title_stars,
+        description,
 
-    return title_stars;
+      ],
+    );
 
   }
 
