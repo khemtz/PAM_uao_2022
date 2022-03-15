@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget {
-  @override
-
-  String descriptionPlace = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+  String nombrePlace;
+  String descriptionPlace;
+  DescriptionPlace(this.nombrePlace, this.descriptionPlace);
+  //String descriptionPlace = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
 
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -36,7 +37,7 @@ class DescriptionPlace extends StatelessWidget {
             right: 20.0
         ),
         child: Text(
-          "Duwili Ella",
+          nombrePlace,
           style: TextStyle(
             fontSize: 40.0,
             fontWeight: FontWeight.w900,
@@ -74,7 +75,7 @@ class DescriptionPlace extends StatelessWidget {
         style: const TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.bold,
-            color: Color(0xFF56575a)
+            color: Color(0xFF0CDC6A)
         ),
 
       ),
