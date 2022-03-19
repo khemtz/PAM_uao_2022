@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             children: [
               DescriptionPlace("Oaxaca", descriptionDummy),
               Review("assets/img/carlos.png","Carlos Hdz", "1 review - 1 Star", "Wooooooooow"),
-              Review("assets/img/girl.jpg","Chicagamer01", "1 review - 1 Star", "Wooooooooow"),
+              Review("assets/img/girl.jpg","Chicagamer01", "1 review - 1 Star", "Que bonito"),
               Review("assets/img/people.jpg","RandomGuy 89", "1 review - 1 Star", "Wooooooooow"),
               Review("assets/img/carlos.png","Carlos", "1 review - 1 Star", "Wooooooooow"),
               ],
