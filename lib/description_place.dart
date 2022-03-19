@@ -73,9 +73,9 @@ class DescriptionPlace extends StatelessWidget {
       child: new Text(
         descriptionPlace,
         style: const TextStyle(
-            fontSize: 16.0,
-            fontWeight: FontWeight.bold,
-            color: Color(0xFF0CDC6A)
+            fontFamily: "Huballi",
+            fontSize: 20.0,
+            color: Color(0xFF44474C)
         ),
 
       ),
