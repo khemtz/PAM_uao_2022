@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
+import 'review.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +20,17 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text("Hola Mundo Feliz"),
           ),
-          body: new DescriptionPlace("Oaxaca", descriptionDummy),
+          body: ListView(
+            children: [
+              DescriptionPlace("Oaxaca", descriptionDummy),
+              Review("assets/img/carlos.png","Carlos Hdz", "1 review - 1 Star", "Wooooooooow"),
+              Review("assets/img/girl.jpg","Chicagamer01", "1 review - 1 Star", "Wooooooooow"),
+              Review("assets/img/people.jpg","RandomGuy 89", "1 review - 1 Star", "Wooooooooow"),
+              Review("assets/img/carlos.png","Carlos", "1 review - 1 Star", "Wooooooooow"),
+              ],
+          )
+          //Review(),
+          //new DescriptionPlace("Oaxaca", descriptionDummy),
         )//MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
