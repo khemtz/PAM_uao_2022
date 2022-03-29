@@ -12,6 +12,23 @@ class MyApp extends StatelessWidget {
   String descriptionDummy = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
   @override
   Widget build(BuildContext context) {
+    final foto = Container(
+      margin: EdgeInsets.only(
+          top: 100.0,
+          left: 80.0
+      ),
+      width: 200.0,
+      height: 200.0,
+      decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          image: DecorationImage(
+            fit: BoxFit.cover,
+            image: AssetImage("assets/img/people.jpg"),
+          )
+      ),
+
+    );
+
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
@@ -31,16 +48,7 @@ class MyApp extends StatelessWidget {
                 ]
               ),
               GradientBackground(),
-              Container(
-                  margin: EdgeInsets.only(
-                      top: 120.0,
-                      left: 20.0,
-                      right: 20.0
-                  ),
-                child: Text(
-                  "HOLA",
-                )
-              ),
+              foto,
             ],
           )
 
