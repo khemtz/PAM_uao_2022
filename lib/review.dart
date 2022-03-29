@@ -52,7 +52,7 @@ class Review extends StatelessWidget {
         style: TextStyle(
           fontFamily: "Lato",
           fontSize: 13.0,
-          color: Colors.red
+          color: Colors.black87
         ),
 
       ),
@@ -68,7 +68,7 @@ class Review extends StatelessWidget {
         style: TextStyle(
             fontFamily: "huballi",
             fontSize: 25.0,
-            color: Colors.blue
+            color: Colors.black38
         ),
 
       ),

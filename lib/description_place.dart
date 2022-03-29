@@ -51,8 +51,8 @@ class DescriptionPlace extends StatelessWidget {
         fullstar,
         fullstar,
         fullstar,
-        halfstar,
-        fullstar
+        fullstar,
+        halfstar
       ],
     );
 

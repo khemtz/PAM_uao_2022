@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
-import 'review.dart';
+import 'review_list.dart';
+import 'gradient_bkground.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,18 +18,32 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          appBar: AppBar(
+          /*appBar: AppBar(
             title: Text("Hola Mundo Feliz"),
-          ),
-          body: ListView(
+          ),*/
+          body:
+          Stack (
             children: [
-              DescriptionPlace("Oaxaca", descriptionDummy),
-              Review("assets/img/carlos.png","Carlos Hdz", "1 review - 1 Star", "Wooooooooow"),
-              Review("assets/img/girl.jpg","Chicagamer01", "1 review - 1 Star", "Wooooooooow"),
-              Review("assets/img/people.jpg","RandomGuy 89", "1 review - 1 Star", "Wooooooooow"),
-              Review("assets/img/carlos.png","Carlos", "1 review - 1 Star", "Wooooooooow"),
-              ],
+              ListView(
+                children: [
+                  DescriptionPlace("CDMX", descriptionDummy),
+                  ReviewList()
+                ]
+              ),
+              GradientBackground(),
+              Container(
+                  margin: EdgeInsets.only(
+                      top: 120.0,
+                      left: 20.0,
+                      right: 20.0
+                  ),
+                child: Text(
+                  "HOLA",
+                )
+              ),
+            ],
           )
+
           //Review(),
           //new DescriptionPlace("Oaxaca", descriptionDummy),
         )//MyHomePage(title: 'Flutter Demo Home Page'),
