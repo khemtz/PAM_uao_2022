@@ -37,15 +37,15 @@ class MyApp extends StatelessWidget {
               GradientBackground(),
 
               Container(
-                height: 200,
+                height: 300,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
                     CardImage("assets/img/mountain_stars.jpeg"),
                     CardImage("assets/img/beach.jpeg"),
                     CardImage("assets/img/river.jpeg"),
-                    CardImage("assets/img/beach.jpeg"),
-                    CardImage("assets/img/river.jpeg"),
+                    CardImage("assets/img/mountain.jpeg"),
+                    CardImage("assets/img/sunset.jpeg"),
                   ],
                 ),
               )
