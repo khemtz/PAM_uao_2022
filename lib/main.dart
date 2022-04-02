@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review_list.dart';
-import 'card_image.dart';
+import 'cardimage_list.dart';
 import 'gradient_bkground.dart';
 
 void main() {
@@ -35,20 +35,9 @@ class MyApp extends StatelessWidget {
                 ]
               ),
               GradientBackground(),
+              cardImageList()
 
-              Container(
-                height: 300,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    CardImage("assets/img/mountain_stars.jpeg"),
-                    CardImage("assets/img/beach.jpeg"),
-                    CardImage("assets/img/river.jpeg"),
-                    CardImage("assets/img/mountain.jpeg"),
-                    CardImage("assets/img/sunset.jpeg"),
-                  ],
-                ),
-              )
+
 
 
             ],
