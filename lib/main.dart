@@ -4,6 +4,7 @@ import 'description_place.dart';
 import 'review_list.dart';
 import 'cardimage_list.dart';
 import 'gradient_bkground.dart';
+import 'button_purple.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
             children: [
               ListView(
                 children: [
-                  DescriptionPlace("CDMX", descriptionDummy),
+                  DescriptionPlace("Oaxaca", descriptionDummy),
+                  ButtonPurple(),
                   ReviewList()
                 ]
               ),
