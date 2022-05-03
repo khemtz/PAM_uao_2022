@@ -39,7 +39,7 @@ class DescriptionPlace extends StatelessWidget {
         child: Text(
           nombrePlace,
           style: TextStyle(
-            fontSize: 40.0,
+            fontSize: 20.0,
             fontWeight: FontWeight.w900,
           ),
           textAlign: TextAlign.center,
